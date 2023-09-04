@@ -61,7 +61,7 @@ html {
 
 .bg-white {
   width: 100%;
-  background-color: #fff;
+  background-color: #F0F8FF;
   border: 2px solid #e5e7ec;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -71,7 +71,7 @@ html {
 
 .bg-grey {
   width: 100%;
-  background-color: #f8fafc;
+  background-color: #F0FFFF;
   border: 2px solid #e5e7ec;
   border-top: 0;
   border-bottom-left-radius: 10px;
@@ -81,7 +81,7 @@ html {
 }
 
 .text-title {
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -92,25 +92,34 @@ html {
   position: relative;
 }
 
+
 .label {
   font-size: .9rem;
   line-height: 1.5;
 }
 
 .input {
-  padding: .5em 0 .5em 1em;
+  /*padding: .5em 0 .5em 1em;
   width: 100%;
   border: 1px solid #e5e7ec;
-  border-radius: 5px;
+  border-radius: 15px;
+  outline: 0;
+  box-sizing: border-box;*/
+  width: 100%;
+  padding: .5em 0 .5em 1em;
+  border: 0;
   outline: 0;
   box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid #e5e7ec;
 }
 
+
 .btn-submit {
-  background-color: #6371C5;
+  background-color: #48D1CC;
   color: #fff;
   padding: .7em;
-  border-radius: 5px;
+  border-radius: 15px;
   outline: 0;
   border: 0;
   width: 100%;
@@ -129,14 +138,14 @@ html {
 }
 
 .link-register {
-  background-color: #fff;
+  background-color: #48D1CC;
   display: flex;
   padding: .7em;
   justify-content: center;
   text-decoration: none;
-  color: #4D5068;
+  color: white;
   border: 1px solid #e5e7ec;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 1em;
 }
 
@@ -144,3 +153,28 @@ html {
   color: #4D5068;
   text-decoration: underline;
 }
+
+
+.remember-forgot {
+  display: flex; 
+  justify-content: space-between;
+  font-size: 14px;
+  /* margin: -15px 0 15px; */
+  padding: 10px;
+}
+
+
+.field-group img{
+  width: 25px;
+  /*cursor: pointer;*/
+  /*float: right;*/
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+#sign-up{
+  color: #48D1CC;
+  text-decoration: none;
+}
+

@@ -39,10 +39,11 @@
 </head>
 
 <body>
+
 	<div class="content-body">
 		<div class="form-wrapper">
 			<form class="bg-white">
-				<h1 class="text-title">Login to your store</h1>
+				<h1 class="text-title">Login</h1>
 				<div class="field-group">
 					<label class="label" for="txt-store">Store adress</label>
 					<input class="input" type="text" id="txt-store" name="store" placeholder="yourstore.myshopify.com" />
@@ -53,8 +54,15 @@
 				</div>
 				<div class="field-group">
 					<label class="label" for="txt-password">Password</label>
-					<input class="input" type="password" id="txt-password" name="password" placeholder="Enter password" />
-					<a href="#forgot" class="link-forgot">Forgot?</a>
+		
+					<input class="input" type="password" id="password" name="password" placeholder="Enter password" />
+						<!-- <a href="#forgot" class="link-forgot">Forgot?</a> -->
+					<img src="eye-close.png" id="eyeicon">
+				    
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox"> Remember me</label>
+					<a href="#">Forgot password?</a>
 				</div>
 
 				<div class="field-group">
@@ -63,11 +71,13 @@
 			</form>
 
 			<div class="bg-grey">
-				<a href="#register" class="link-register">Sign Up</a>
+				<div class="sing-up">Don't have an account? <a href=""class="text-link" id="sign-up" >Sign up</a></div>
+				<!--<a href="#register" class="link-register">Sign Up</a>-->
 				<small class="link-about">What is Shopify? <a href="#about">Find out more</a></small>
 			</div>
 		</div>
 	</div>
+
 
 	<!-- ADDITIONAL CODE -- start YOU MIGHT NOT NEEDED -->
 	<footer>
@@ -82,7 +92,23 @@
 			Github Repo
 		</a>
 	</footer>
+	
+	<script>
+		let eyeicon = document.getElementById("eyeicon");
+		let password = document.getElementById("password");
+
+		eyeicon.onclick = function() {
+			if (password.type == "password"){
+				password.type = "text"; 
+				eyeicon.src = "eye-open.png";
+			}else{
+				password.type = "password";
+				eyeicon.src = "eye-close.png";
+			}
+		} 
+	</script>
+
+
 	<!-- ADDITIONAL CODE -- end YOU MIGHT NOT NEEDED -->
 </body>
-
 </html>
